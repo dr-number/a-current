@@ -1,0 +1,18 @@
+{
+  "title": "Customer Testimony",
+  "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo assumenda, dolorum necessitatibus eius earumvoluptates sed!",
+  "cards": [
+    {
+     "id": 1,"img": "../src/images/person_1.jpg", "alt": "image1", "name": "Mike Fisher",
+      "title": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, deserunt eveniet veniam. Ipsam, nam, voluptatum"
+    },
+    {
+     "id": 2,"img": "../src/images/person_2.jpg", "alt": "image2", "name": "Jean Stanley",
+      "title": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, deserunt eveniet veniam. Ipsam, nam, voluptatum"
+    },
+    {
+     "id": 3,"img": "../src/images/person_3.jpg", "alt": "image3", "name": "Katie Rose",
+      "title": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, deserunt eveniet veniam. Ipsam, nam, voluptatum"
+    }
+  ]
+}

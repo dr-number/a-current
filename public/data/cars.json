@@ -1,0 +1,19 @@
+[
+  {"img": "../src/images/img_1.jpg", "alt": "Image", "hrefMore": "#", "title": "Range Rover S64 Coupe", "price": "$150",
+    "doors": 4, "seats": 5, "transmission": "Automatic", "miniumAge": "18 years", "raiting": 1},
+
+  {"img": "../src/images/img_2.jpg", "alt": "Image", "hrefMore": "#", "title": "Range Rover S64 Coupe", "price": "$250",
+    "doors": 4, "seats": 5, "transmission": "Automatic", "miniumAge": "18 years", "raiting": 2},
+
+  {"img": "../src/images/img_3.jpg", "alt": "Image", "hrefMore": "#", "title": "Range Rover S64 Coupe",
+    "price": "$350", "doors": 4, "seats": 5, "transmission": "Automatic", "miniumAge": "18 years", "raiting": 3},
+
+  {"img": "../src/images/img_1.jpg", "alt": "Image", "hrefMore": "#", "title": "Range Rover S64 Coupe", "price": "$150",
+    "doors": 4, "seats": 5, "transmission": "Automatic", "miniumAge": "18 years", "raiting": 4},
+
+  {"img": "../src/images/img_2.jpg", "alt": "Image", "hrefMore": "#", "title": "Range Rover S64 Coupe", "price": "$250",
+    "doors": 4, "seats": 5, "transmission": "Automatic", "miniumAge": "18 years", "raiting": 5},
+
+  {"img": "../src/images/img_3.jpg", "alt": "Image", "hrefMore": "#", "title": "Range Rover S64 Coupe",
+    "price": "$350", "doors": 4, "seats": 5, "transmission": "Automatic", "miniumAge": "18 years", "raiting": 3}
+]

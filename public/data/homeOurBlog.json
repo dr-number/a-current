@@ -1,0 +1,25 @@
+{
+  "title": "Our blog",
+  "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo assumenda, dolorum necessitatibus eius earum voluptates sed!",
+  "cards": [
+    {
+      "id": 1, "img": "../src/images/post_1.jpg", "alt": "post1", "date": "July 17, 2019",
+      "authorId": 1, "author": "Admin",
+      "title": "The best car rent in the entire planet",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores eos soluta, dolore harum molestias consectetur."
+    },
+    {
+      "id": 2, "img": "../src/images/post_2.jpg", "alt": "post1", "date": "July 17, 2019",
+      "authorId": 1, "author": "Admin",
+      "title": "The best car rent in the entire planet",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores eos soluta, dolore harum molestias consectetur."
+    },
+    {
+      "id": 2, "img": "../src/images/post_3.jpg", "alt": "post1", "date": "July 17, 2019",
+      "authorId": 1, "author": "Admin",
+      "title": "The best car rent in the entire planet",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores eos soluta, dolore harum molestias consectetur."
+    }
+
+  ]
+}

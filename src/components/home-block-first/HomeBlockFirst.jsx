@@ -1,6 +1,7 @@
 import React from 'react';
 import bg from '../../images/hero_1.jpg'
 import HomeBlockFirstForm from "./HomeBlockFirstForm";
+import {Link} from "react-router-dom";
 
 const HomeBlockFirst = () => {
   return (
@@ -36,7 +37,7 @@ const HomeBlockFirst = () => {
                 </ul>
                 <div className="d-flex align-items-center bg-light p-3">
                   <span>$150/day</span>
-                  <a href="contact.html" className="ml-auto btn btn-primary">Rent Now</a>
+                  <Link to="/contact" className="ml-auto btn btn-primary">Rent Now</Link>
                 </div>
               </div>
             </div>

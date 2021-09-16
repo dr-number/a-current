@@ -1,0 +1,11 @@
+{
+  "title": "How it works",
+  "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo assumenda, dolorum necessitatibus eius earum voluptates sed!",
+  "steps": [
+    {"number": "01", "caption": "Time & Place"},
+    {"number": "02", "caption": "Car"},
+    {"number": "03", "caption": "Details"},
+    {"number": "04", "caption": "Checkout"},
+    {"number": "05", "caption": "Done"}
+  ]
+}

@@ -1,0 +1,8 @@
+[
+  {"id": 1, "title": "Repair", "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, laboriosam.", "classIco": "flaticon-car-1"},
+  {"id": 2, "title": "Car Accessories", "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, laboriosam.", "classIco": "flaticon-traffic"},
+  {"id": 3, "title": "Own a Car", "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, laboriosam.", "classIco": "flaticon-valet"},
+  {"id": 4, "title": "Car key", "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, laboriosam.", "classIco": "flaticon-car"},
+  {"id": 5, "title": "Car key", "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, laboriosam.", "classIco": "flaticon-valet-1"},
+  {"id": 6, "title": "Car key", "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, laboriosam.", "classIco": "flaticon-key"}
+]

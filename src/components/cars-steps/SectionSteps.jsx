@@ -2,6 +2,11 @@ import React from 'react';
 import Step from "./Step";
 
 const SectionSteps = ({data}) => {
+
+  //console.log(data.steps)
+  //data.steps.map(step => console.log(step) )
+  //return(<></>)
+
   return (
     <div className="container site-section mb-5">
       <div className="row justify-content-center text-center">
@@ -13,7 +18,7 @@ const SectionSteps = ({data}) => {
       <div className="how-it-works d-flex">
 
         {
-          data.steps.map(step => <Step number={step.number} caption={step.caption} /> )
+          data.steps && data.steps.map(step => <Step data={step} /> )
         }
 
       </div>

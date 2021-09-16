@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import HomeBlockFirst from "../components/home-block-first/HomeBlockFirst";
 import HomeOurOffer from "../components/home-block-first/HomeOurOffer";
 import BlockFirst from "../components/block-first/BlockFirst";
@@ -6,89 +6,52 @@ import HomeServices from "../components/home-block-first/HomeServices";
 import SectionSteps from "../components/cars-steps/SectionSteps";
 import HomeCustomerTestimony from "../components/home-customer-testimony/HomeCustomerTestimony";
 
-import person1 from "../images/person_1.jpg"
-import person2 from "../images/person_2.jpg"
-import person3 from "../images/person_3.jpg"
-
-import post1 from "../images/post_1.jpg"
-import post2 from "../images/img_2.jpg"
-import post3 from "../images/img_3.jpg"
-
-import HomeOurBlock from "../components/home-our-blog/HomeOurBlog";
 import HomeOurBlog from "../components/home-our-blog/HomeOurBlog";
+import getOurServices from "../api/getOurServices";
+import getSteps from "../api/getSteps";
+import getTestimony from "../api/getTestimony";
+import getHomeOurBlog from "../api/getHomeOurBlog";
 
 const Home = () => {
 
-  const ourServices = [
-    {id: "1", title: "Repair", text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, laboriosam.", classIco: "flaticon-car-1"},
-    {id: "2", title: "Car Accessories", text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, laboriosam.", classIco: "flaticon-traffic"},
-    {id: "3", title: "Own a Car", text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, laboriosam.", classIco: "flaticon-valet"}
-  ]
+  const [ourServices, setOurServices] = useState([])
+  const [steps, setSteps] = useState({})
+  const [testimony, setTestimony] = useState({})
+  const [homeOurBlog, setHomeOurBlog] = useState({})
 
-  const dataBlock2 = {
-    title: 'How it works',
-    text: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo assumenda, dolorum necessitatibus eius earum voluptates sed!`,
-    steps: [
-      {number: "01", caption: "Time & Place"},
-      {number: "02", caption: "Car"},
-      {number: "03", caption: "Details"},
-      {number: "04", caption: "Checkout"},
-      {number: "05", caption: "Done"}
-    ]
-  }
+  useEffect(() => {
 
-  const testimony = {
-    title: "Customer Testimony",
-    text: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo assumenda, dolorum necessitatibus eius earum 
-    voluptates sed!`,
-    cards: [
-      {
-        id: 1, img: person1, alt: "image1", name: "Mike Fisher",
-        title: `"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, deserunt eveniet veniam.
-        Ipsam, nam, voluptatum"`
-      },
-      {
-        id: 2, img: person2, alt: "image2", name: "Jean Stanley",
-        title: `"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, deserunt eveniet veniam.
-        Ipsam, nam, voluptatum"`
-      },
-      {
-        id: 3, img: person3, alt: "image3", name: "Katie Rose",
-        title: `"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, deserunt eveniet veniam.
-        Ipsam, nam, voluptatum"`
-      }
-    ]
-  }
+    getOurServices().then(function (result) {
+      setOurServices(result)
+      //console.log(ourServices)
 
-  const homeOurBlog = {
-    title: "Our blog",
-    text: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo assumenda, dolorum necessitatibus eius
-           earum voluptates sed!`,
-    cards: [
-      {
-        id: 1, img: post1, alt: "post1", date: "July 17, 2019",
-        authorId: 1, author: "Admin",
-        title: "The best car rent in the entire planet",
-        text: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores eos soluta, dolore harum molestias
-            consectetur.`
-      },
-      {
-        id: 2, img: post2, alt: "post1", date: "July 17, 2019",
-        authorId: 1, author: "Admin",
-        title: "The best car rent in the entire planet",
-        text: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores eos soluta, dolore harum molestias
-            consectetur.`
-      },
-      {
-        id: 2, img: post3, alt: "post1", date: "July 17, 2019",
-        authorId: 1, author: "Admin",
-        title: "The best car rent in the entire planet",
-        text: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores eos soluta, dolore harum molestias
-            consectetur.`
-      }
+    }, function (error) {
+      //setMessage(error.toString());
+      console.log(error);
+    })
 
-    ]
-  }
+    getSteps().then(function (result) {
+      setSteps(result)
+
+    }, function (error) {
+      console.log(error);
+    })
+
+    getTestimony().then(function (result) {
+      setTestimony(result)
+
+    }, function (error) {
+      console.log(error);
+    })
+
+    getHomeOurBlog().then(function (result) {
+      setHomeOurBlog(result)
+
+    }, function (error) {
+      console.log(error);
+    })
+
+  },[])
 
   return (
     <>
@@ -97,10 +60,11 @@ const Home = () => {
       <BlockFirst title={<h2 className="text-white">Our services</h2>}>
         <div className="row">
           { ourServices.map( item => <HomeServices key={item.id} data={item} /> ) }
+
         </div>
       </BlockFirst>
 
-      <SectionSteps data={dataBlock2} />
+      <SectionSteps data={steps} />
       <HomeCustomerTestimony data={testimony} />
 
       <HomeOurBlog data={homeOurBlog} />

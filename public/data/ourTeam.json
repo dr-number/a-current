@@ -1,0 +1,9 @@
+[
+  {"id": 1, "title": "James Doe", "meta": "Founder", "img": "person_1.jpg", "alt": "Image", "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, sapiente."},
+  {"id": 2, "title": "James Doe", "meta": "Founder", "img": "person_2.jpg", "alt": "Image", "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, sapiente."},
+  {"id": 3, "title": "James Doe", "meta": "Founder", "img": "person_3.jpg", "alt": "Image", "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, sapiente."},
+  {"id": 4, "title": "James Doe", "meta": "Founder", "img": "person_4.jpg", "alt": "Image", "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, sapiente."},
+  {"id": 5, "title": "James Doe", "meta": "Founder", "img": "person_5.jpg", "alt": "Image", "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, sapiente."},
+  {"id": 6, "title": "James Doe", "meta": "Founder", "img": "person_6.jpg", "alt": "Image", "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, sapiente."}
+]
+

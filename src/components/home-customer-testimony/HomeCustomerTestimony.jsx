@@ -14,7 +14,7 @@ const HomeCustomerTestimony = ({data}) => {
         <div className="row">
 
           {
-            data.cards.map(item => <CardTestimony data={item}/>)
+            data.cards && data.cards.map(item => <CardTestimony data={item}/>)
           }
 
         </div>

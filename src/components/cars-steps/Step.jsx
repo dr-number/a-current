@@ -1,10 +1,10 @@
 import React from 'react';
 
-const Step = ({number, caption}) => {
+const Step = ({data}) => {
   return (
       <div className="step">
-        <span className="number"><span>{number}</span></span>
-        <span className="caption">{caption}</span>
+        <span className="number"><span>{data.number}</span></span>
+        <span className="caption">{data.caption}</span>
       </div>
   );
 };

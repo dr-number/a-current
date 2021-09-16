@@ -9,6 +9,7 @@ import './css/magnific-popup.css';
 import './css/owl.theme.default.min.css';
 import './css/style.css';
 import './fonts/icomoon/style.css'
+import './fonts/flaticon/font/flaticon.css'
 import MyMenu from "./components/menu/MyMenu";
 
 
