@@ -7,6 +7,7 @@ const MenuList = ({pathname}) => {
     <>
       {
         privateRouters.map(item =>
+          !item.invisibleInMenu &&
           <li className={pathname == item.path ? "active" : ""}>
             <Link className="nav-link" exact={item.exact} to={item.path}>{item.title}</Link>
           </li>

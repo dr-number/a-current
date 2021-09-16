@@ -1,7 +1,8 @@
 import React from 'react';
 import bg from '../../images/hero_1.jpg'
-import HomeBlockFirstForm from "./HomeBlockFirstForm";
 import {Link} from "react-router-dom";
+import HomeBlockFirstForm from "../forms/HomeBlockFirstForm";
+import SiteSections from "../site-sections/SiteSections";
 
 const HomeBlockFirst = () => {
   return (
@@ -45,7 +46,9 @@ const HomeBlockFirst = () => {
         </div>
       </div>
     </div>
-      <HomeBlockFirstForm />
+      <SiteSections classSection="pt-0 pb-0 bg-light">
+        <HomeBlockFirstForm />
+      </SiteSections>
     </>
   );
 };

@@ -13,7 +13,7 @@ export const privateRouters = [
   {path: '/about', title: 'About', component: About, exact: false},
   {path: '/blog', title: 'Blog', component: Blog, exact: false},
   {path: '/contact', title: 'Contact', component: Contact, exact: false},
-  {path: '/single/:id', title: 'Single', component: Single, exact: false},
+  {path: '/single/:id', title: 'Single', component: Single, exact: false, invisibleInMenu: true},
 
 ]
 

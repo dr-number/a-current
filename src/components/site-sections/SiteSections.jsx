@@ -1,8 +1,8 @@
 import React from 'react';
 
-const SiteSections = ({children, classNameRow, classSection}) => {
+const SiteSections = ({children, idSection, classSection}) => {
   return (
-    <div className={ ["site-section", classSection].join(" ") }>
+    <div id={idSection} className={ ["site-section", classSection].join(" ") }>
       <div className="container">
         { children }
       </div>

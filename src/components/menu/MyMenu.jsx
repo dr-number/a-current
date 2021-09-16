@@ -1,6 +1,5 @@
 import React from 'react';
 import {Link, useLocation} from "react-router-dom";
-import {privateRouters} from "../../router/Routs";
 import MenuList from "./MenuList";
 
 const MyMenu = () => {
@@ -27,7 +26,7 @@ const MyMenu = () => {
 
               <div className="col-3 ">
                 <div className="site-logo">
-                  <a href="index.html">CarRent</a>
+                  <Link to="/">CarRent</Link>
                 </div>
               </div>
 
